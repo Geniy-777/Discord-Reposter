@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Тёма ЛОX</title>
+  </head>
+  <body>
+    <div class="main-content__wrapper">
+      <h1 id="header">Тёма ЛОX</h1>
+
+      <div class="sendForm">
+        <div class="text-content">
+          <p class="text-label">TOKEN</p>
+          <input type="text" name="authorization" class="text-item" />
+        </div>
+        <div class="text-content">
+          <p class="text-label">Chanel ID</p>
+          <input type="text" name="channelID" class="text-item" />
+        </div>
+        <div class="text-content">
+          <p class="text-label">Send period (в минутах)</p>
+          <input type="text" name="timeout" class="text-item" />
+        </div>
+        <div class="text-content">
+          <p class="text-label">Message</p>
+          <textarea type="text" name="message" class="text-area"></textarea>
+        </div>
+
+        <div class="mainBtns">
+          <button id="send" class="btn">Start</button>
+          <button id="stop" class="btn">Stop</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="logs">
+      <div class="title-block">
+        <p class="logs-title">logs</p>
+        <button class="btn" id="clear-logs">Clear</button>
+      </div>
+      <textarea name="logs-content"  id="logs" disabled></textarea>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

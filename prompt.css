@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --white: #fff;
+  --darkblue: #1b4965;
+  --lightblue: #edf2f4;
+}
+
+.title{
+  font-size: 40px;
+}
+
+body{
+  background: #252428;
+  color: #fcbe24;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--darkblue);
+  border-radius: 40px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: var(--white);
+  border-radius: 40px;
+}
+
+.table-wrapper table {
+  margin: 50px 0 20px;
+  border-collapse: collapse;
+  text-align: center;
+
+}
+
+tbody{
+  border: #fcbe24 1px solid;
+
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+  padding: 10px;
+  min-width: 75px;
+}
+
+.table-wrapper table th {
+  color: #252428;
+  background: #fcbe24;
+}
+
+.table-wrapper table tbody tr:nth-of-type(even) > * {
+  background: var(--lightblue);
+  color: #252428;
+}
+
+.table-wrapper table td:first-child {
+  display: grid;
+  grid-gap: 10px;
+  text-align: left;
+}
+
+.table-credits {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  z-index: 1;
+  background: var(--white);
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
